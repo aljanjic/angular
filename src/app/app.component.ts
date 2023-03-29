@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'recepieBookApp';
+
+  recipesView: boolean = true;
+
+  onRecipes(){
+    this.recipesView = true;
+  }
+
+  onShoppingList(){
+    this.recipesView = false;
+  }
+
 }
