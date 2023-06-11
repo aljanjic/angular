@@ -7,14 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  recipesView: boolean = true;
 
-  onRecipes(){
-    this.recipesView = true;
-  }
-
-  onShoppingList(){
-    this.recipesView = false;
-  }
 
 }
