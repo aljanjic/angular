@@ -7,10 +7,12 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item ">
-            <a (click)="onRecipes()" class="nav-link ms-1" href="#">Recipes</a>
+            <!-- <a (click)="onRecipes()" class="nav-link ms-1" >Recipes</a> -->
+            <a [routerLink]="['/recipes']" class="nav-link ms-1">Recipes</a>
+
           </li>
           <li class="nav-item">
-            <a (click)="onShoppingList()" class="nav-link ms-1" href="#">Shopping List</a>
+            <a [routerLink]="['/shopping-list']" class="nav-link ms-1">Shopping List</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto me-5">

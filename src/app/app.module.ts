@@ -36,4 +36,4 @@ import {DropdownDirective} from './shared/dropdown.directive';
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
