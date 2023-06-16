@@ -10,8 +10,6 @@ export class DropdownDirective {
 
     constructor(private elRef: ElementRef, private renderer: Renderer2){}
 
-
-
     @HostListener ('click') toggleOpen (){
         this.isOpen = !this.isOpen; 
         const dropdown = this.elRef.nativeElement.nextElementSibling;
@@ -32,6 +30,4 @@ export class DropdownDirective {
         });
         
     }
-
-
 }

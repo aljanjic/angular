@@ -8,9 +8,6 @@ import { RecipeDetailComponent } from "./recipes/recipe-detail/recipe-detail.com
 import { RecipeEditComponent } from "./recipes/recipe-edit/recipe-edit.component";
 
 
-
-
-
 const appRoutes: Routes = [
   {path: '', redirectTo: '/recipes', pathMatch: 'full'},
   {path: 'recipes', component: RecipesComponent, children:[
@@ -22,7 +19,6 @@ const appRoutes: Routes = [
   {path: 'shopping-list', component: ShoppingListComponent}
 ];
 
-
 @NgModule({
     imports:[
         // RouterModule.forRoot(appRoutes, {useHash: true})
@@ -30,7 +26,6 @@ const appRoutes: Routes = [
 
     ],
     exports:[RouterModule]
-
 })
 
 export class AppRoutingModule {}
