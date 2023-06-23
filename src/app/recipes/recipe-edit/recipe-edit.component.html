@@ -54,7 +54,7 @@
             <div class="row mt-3">
                 <div class="col-md-12" formArrayName="ingredients">
                     <div 
-                      class="row"
+                      class="row mt-2"
                       *ngFor="let ingredientCtrl of controls; let i = index"
                       [formGroupName]="i">
                         <div class="col-md-8">
@@ -73,9 +73,17 @@
                             <button class="btn btn-danger"> X </button>
                         </div>
                     </div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-success" (click)="onAddIngredient()"> Add Ingredient</button>
+                        </div>
+                    </div>
+            
+
                 </div>   
             </div>
-
         </form>
     </div>
 </div>
