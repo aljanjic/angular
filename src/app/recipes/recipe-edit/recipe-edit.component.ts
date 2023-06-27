@@ -46,7 +46,6 @@ export class RecipeEditComponent implements OnInit {
       this.recipeService.addRecipe( this.recipeForm.value);
 
     }
-    console.log(this.recipeForm)
   }
 
   onAddIngredient(){
