@@ -27,14 +27,15 @@
                         <input type="text"
                          id="imagePath"
                          formControlName="imagePath"
-                         class="form-control">
+                         class="form-control" 
+                         #imagePath>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-12">
-                    <img src="" class="img-responsive">
+                <div class="col-sm-12" >
+                    <img [src]="imagePath.value" class="img-responsive mt-2" style="width: 55%">
                 </div>
             </div>
 
@@ -53,6 +54,7 @@
 
             <div class="row mt-3">
                 <div class="col-md-12" formArrayName="ingredients">
+                    
                     <div 
                       class="row mt-2"
                       *ngFor="let ingredientCtrl of controls; let i = index"
@@ -70,7 +72,10 @@
                                 formControlName="amount">
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-danger"> X </button>
+                            <button 
+                            type="button"
+                            class="btn btn-danger"
+                            (click)="onDeleteIngredietnt(i)"> X </button>
                         </div>
                     </div>
 
@@ -81,7 +86,6 @@
                         </div>
                     </div>
             
-
                 </div>   
             </div>
         </form>
