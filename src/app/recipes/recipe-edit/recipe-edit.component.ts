@@ -26,6 +26,8 @@ export class RecipeEditComponent implements OnInit {
       // Do not forget to init it at beginning
       this.initForm();
 
+      console.log(this.recipeForm)
+
 
     
   }
